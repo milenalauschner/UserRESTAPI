@@ -1,2 +1,4 @@
-# ConcurAPIs
-First project in Java.
+# 1stJavaProject
+
+- Maven
+- Java 17
