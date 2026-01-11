@@ -17,7 +17,7 @@ public class UserController {
 
     // 1) Simple GET just to confirm it's working
     @GetMapping("/users")
-    public String user() {
+    public String getUser() {
         return "Hello GET users is working!";
     }
 
@@ -37,6 +37,8 @@ public class UserController {
     public UserDTO updateUser(
             @PathVariable Long id,
             @RequestBody UserDTO update
+
+            //Spring takes that JSON and converts it into a UserDTO instance and assigns it to the parameter named update.
     )
     {
         // pretend you loaded this from a DB
